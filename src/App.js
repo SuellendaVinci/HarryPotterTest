@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BookCard } from "./components/BookCard";
 
 function App() {
+  const book01 = {
+    title: "Harry Potter and the Philosopher's Stone",
+    author: "J. K. Rowling",
+  };
+
+  const book02 = {
+    title: "Harry Potter and the Chamber of Secrets",
+    author: "J. K. Rowling",
+  };
+
+  const book03 = {
+    title: "Harry Potter and the Prisoner of Azkaban",
+    author: "J. K. Rowling",
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BookCard title={book01.title} author={book01.author} />
+      <BookCard title={book02.title} author={book01.author} />
+      <BookCard title={book03.title} author={book01.author} />
     </div>
   );
 }
