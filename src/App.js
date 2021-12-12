@@ -22,10 +22,12 @@ function App() {
 
   return (
     <div>
-      <Container url={hog} />
+      <Container url={hog}>
       <BookCard title={book01.title} author={book01.author} image={livro1} />
       <BookCard title={book02.title} author={book01.author} image={livro2} />
       <BookCard title={book03.title} author={book01.author} image={livro3} />
+      </Container>
+      
     </div>
   );
 }
